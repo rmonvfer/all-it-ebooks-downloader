@@ -1,3 +1,11 @@
+# Changelist
+# Creado - Agosto 2018
+# Anadido descarga masiva y descarga de terminos - 28/08/2018
+# Anadido listado de archivos y categorias - 23/09/2018
+#
+# Ramon Vila Ferreres - 2018
+# Licencia MIT
+
 from bs4 import BeautifulSoup
 import requests
 import os, sys
@@ -175,7 +183,7 @@ def book_selector(current_num):
 		if (book_page_num > 0):
 			local_num -= 1
 			book_selector(local_num)
-			
+
 		elif book_page_num == 0:
 			print "No puedes ir atras"
 			book_selector(local_num)
